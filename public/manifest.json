@@ -1,6 +1,6 @@
 {
-  "name": "React Avançado - Boilerplate",
-  "short_name": "React Avançado",
+  "name": "Register Switch - Time spent performing tasks",
+  "short_name": "Register Switch",
   "icons": [
     {
       "src": "/img/icon-192.png",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092B",
-  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "Time spent executing tasks in a simple way to enable and disable",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092B"
