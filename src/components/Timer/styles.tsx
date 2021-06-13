@@ -1,17 +1,15 @@
 import styled from 'styled-components'
 
-interface OnProps {
-  on: boolean
-}
+import OnProps from '../../types/onProps'
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<OnProps>`
   position: absolute;
-  bottom: 2rem;
-  right: 3rem;
+  bottom: 2.5rem;
+  right: 5rem;
 
   font-size: 5rem;
   font-weight: 600;
-  color: ${({ on }: OnProps) => (on ? '#000000' : '#ffffff')};
+  color: ${({ on }) => (on ? '#000000ac' : '#ffffffac')};
 
   display: flex;
   flex-direction: row;

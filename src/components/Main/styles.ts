@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 
-interface WrapperProps {
-  on: boolean
-}
+import OnProps from '../../types/onProps'
 
-export const Wrapper = styled.main`
-  background-color: ${({ on }: WrapperProps) => (on ? '#dfdfdf' : '#2d2838')};
+export const Wrapper = styled.main<OnProps>`
+  background-color: ${({ on }) => (on ? '#dfdfdf' : '#2d2838')};
   color: #fff;
   width: 100%;
   height: 100%;

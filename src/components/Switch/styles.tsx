@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-interface OnProps {
-  on: boolean
-}
+import OnProps from '../../types/onProps'
 
 export const Wrapper = styled.div`
   border-radius: 50%;
@@ -10,8 +8,8 @@ export const Wrapper = styled.div`
   cursor: pointer;
 `
 
-export const Border = styled.div`
-  background-color: ${({ on }: OnProps) => (on ? '#ff2838' : '#b3464e')};
+export const Border = styled.div<OnProps>`
+  background-color: ${({ on }) => (on ? '#ff2838' : '#b3464e')};
   transition: all 0.3s;
 
   width: 20rem;
@@ -25,10 +23,10 @@ export const Border = styled.div`
   justify-content: center;
 `
 
-export const Symbol = styled.div`
+export const Symbol = styled.div<OnProps>`
   width: 10rem;
   height: 10rem;
   transition: all 0.3s;
 
-  opacity: ${({ on }: OnProps) => (on ? 1 : 0.6)};
+  opacity: ${({ on }) => (on ? 1 : 0.6)};
 `
